@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_snc_voltworksr_0_visit_request</collection>
+        <condition/>
+        <description>Routes new visit requests through EHS approval when restricted production zones are requested. Regulatory Inspections bypass the EHS gate and are automatically approved.</description>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_snc_voltworksr_0_visit_request">state=requested<item display_value="Requested" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="requested"/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>EHS Approval Routing</name>
+        <order>50</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[
+(function executeRule(current, previous) {
+
+    // ── Path 1: Regulatory Inspection bypass ────────────────────
+    if (current.getValue('visit_type') == 'regulatory_inspection') {
+        current.setValue('state', 'approved');
+        gs.addInfoMessage(
+            'EHS approval gate bypassed \u2014 visit type is Regulatory Inspection. ' +
+            'Visit has been automatically approved.'
+        );
+        gs.info(
+            'EHS Routing: Visit ' + current.getDisplayValue('number') +
+            ' auto-approved (regulatory inspection bypass)'
+        );
+        return;
+    }
+
+    // ── Path 2: Check for restricted production zones ───────────
+    var zoneList = current.getValue('production_zones');
+    if (!zoneList) {
+        return;
+    }
+
+    var restrictedZones = [];
+
+    var zoneGr = new GlideRecord('x_snc_voltworksr_0_production_zone');
+    zoneGr.addQuery('sys_id', 'IN', zoneList);
+    zoneGr.addQuery('access_tier', 'restricted');
+    zoneGr.query();
+
+    while (zoneGr.next()) {
+        restrictedZones.push(
+            zoneGr.getDisplayValue('name') + ' (' + zoneGr.getValue('short_code') + ')'
+        );
+    }
+
+    if (restrictedZones.length > 0) {
+        current.setValue('state', 'pending_ehs_approval');
+        gs.addInfoMessage(
+            'Visit routed to EHS Approval \u2014 the following restricted zones were requested: ' +
+            restrictedZones.join(', ') + '.'
+        );
+        gs.info(
+            'EHS Routing: Visit ' + current.getDisplayValue('number') +
+            ' held for EHS approval. Restricted zones: ' + restrictedZones.join(', ')
+        );
+    }
+
+})(current, previous);
+]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>robert.peerenboom</sys_created_by>
+        <sys_created_on>2026-04-09 13:48:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7c284c486f2a4d1aa9a5621115c83d0e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>EHS Approval Routing</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="VoltWorksRWP Visitor Management" source="x_snc_voltworksr_0">afcb9bc347480310086a1f94236d4392</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VoltWorksRWP Visitor Management">afcb9bc347480310086a1f94236d4392</sys_scope>
+        <sys_update_name>sys_script_7c284c486f2a4d1aa9a5621115c83d0e</sys_update_name>
+        <sys_updated_by>robert.peerenboom</sys_updated_by>
+        <sys_updated_on>2026-04-09 13:48:12</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=7c284c486f2a4d1aa9a5621115c83d0e"/>
+</record_update>

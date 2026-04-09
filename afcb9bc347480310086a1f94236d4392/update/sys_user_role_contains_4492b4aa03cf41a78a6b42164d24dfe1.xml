@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role_contains">
+    <sys_user_role_contains action="INSERT_OR_UPDATE">
+        <contains display_value="canvas_user" name="canvas_user">8536f54bc713330072b211d4d8c26080</contains>
+        <role display_value="x_snc_voltworksr_0.ws_team_member" name="x_snc_voltworksr_0.ws_team_member">023647ad4587465e9ec268f716dbc99b</role>
+        <sys_class_name>sys_user_role_contains</sys_class_name>
+        <sys_created_by>robert.peerenboom</sys_created_by>
+        <sys_created_on>2026-04-09 13:29:56</sys_created_on>
+        <sys_id>4492b4aa03cf41a78a6b42164d24dfe1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>canvas_user.x_snc_voltworksr_0.ws_team_member</sys_name>
+        <sys_package display_value="VoltWorksRWP Visitor Management" source="x_snc_voltworksr_0">afcb9bc347480310086a1f94236d4392</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VoltWorksRWP Visitor Management">afcb9bc347480310086a1f94236d4392</sys_scope>
+        <sys_update_name>sys_user_role_contains_4492b4aa03cf41a78a6b42164d24dfe1</sys_update_name>
+        <sys_updated_by>robert.peerenboom</sys_updated_by>
+        <sys_updated_on>2026-04-09 13:29:56</sys_updated_on>
+    </sys_user_role_contains>
+</record_update>

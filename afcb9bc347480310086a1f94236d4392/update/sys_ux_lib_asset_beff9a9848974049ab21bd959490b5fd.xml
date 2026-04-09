@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_lib_asset">
+    <sys_ux_lib_asset action="INSERT_OR_UPDATE">
+        <bundled_asset>false</bundled_asset>
+        <category>component</category>
+        <checksum>c898c129a555d5199ddea71675c8282f</checksum>
+        <config_option/>
+        <content>/*__ESM_BODY_START__*/window.process={};import{r as reactExports,j as jsxRuntimeExports}from"./main.jsdbx";import{f as fetchRequests}from"./api.jsdbx";let d=f=&gt;f?.display_value||f||"",v=f=&gt;f?.value||f||"",STATE_CLASSES={requested:"badge--info",pending_ehs_approval:"badge--warning",approved:"badge--positive",in_progress:"badge--info",completed:"badge--positive",cancelled:"badge--muted",rejected:"badge--critical"};function RequestList({navigateToView}){let[records,setRecords]=reactExports.useState([]),[loading,setLoading]=reactExports.useState(!0),[error,setError]=reactExports.useState("");return reactExports.useEffect(()=&gt;{fetchRequests().then(setRecords).catch(e=&gt;setError(e.message)).finally(()=&gt;setLoading(!1))},[]),jsxRuntimeExports.jsxs("div",{className:"request-list",children:[jsxRuntimeExports.jsxs("div",{className:"request-list__header",children:[jsxRuntimeExports.jsx("h2",{className:"request-list__title",children:"My Access Requests"}),jsxRuntimeExports.jsx("a",{href:"?view=create",className:"nav-btn nav-btn--primary",onClick:e=&gt;{e.preventDefault(),navigateToView("create",null,{title:"New Access Request"})},children:"+ New Request"})]}),loading&amp;&amp;jsxRuntimeExports.jsxs("div",{className:"portal-loading",children:[jsxRuntimeExports.jsx("div",{className:"portal-loading__spinner"}),jsxRuntimeExports.jsx("p",{className:"portal-loading__text",children:"Loading requests..."})]}),error&amp;&amp;jsxRuntimeExports.jsx("div",{className:"form-error",children:error}),!loading&amp;&amp;!error&amp;&amp;0===records.length&amp;&amp;jsxRuntimeExports.jsxs("div",{className:"empty-state",children:[jsxRuntimeExports.jsx("p",{children:"No access requests found."}),jsxRuntimeExports.jsx("a",{href:"?view=create",className:"nav-btn nav-btn--primary",onClick:e=&gt;{e.preventDefault(),navigateToView("create")},children:"Submit Your First Request"})]}),!loading&amp;&amp;records.length&gt;0&amp;&amp;jsxRuntimeExports.jsxs("div",{className:"request-list__table",children:[jsxRuntimeExports.jsxs("div",{className:"list-header",children:[jsxRuntimeExports.jsx("span",{children:"Number"}),jsxRuntimeExports.jsx("span",{children:"State"}),jsxRuntimeExports.jsx("span",{children:"Visit Type"}),jsxRuntimeExports.jsx("span",{children:"Start"}),jsxRuntimeExports.jsx("span",{children:"Host"})]}),records.map(r=&gt;jsxRuntimeExports.jsxs("div",{className:"list-row",onClick:()=&gt;navigateToView("detail",v(r.sys_id),{title:`Request ${d(r.number)}`}),children:[jsxRuntimeExports.jsx("span",{className:"list-row__number",children:d(r.number)}),jsxRuntimeExports.jsx("span",{children:jsxRuntimeExports.jsx("span",{className:`badge ${STATE_CLASSES[v(r.state)]||""}`,children:d(r.state)})}),jsxRuntimeExports.jsx("span",{children:d(r.visit_type)}),jsxRuntimeExports.jsx("span",{children:d(r.scheduled_start)}),jsxRuntimeExports.jsx("span",{children:d(r.host_employee)})]},v(r.sys_id)))]})]})}export{RequestList as default};
+//# sourceMappingURL=RequestList.js.map.jsdbx
+</content>
+        <content_meta/>
+        <dependencies/>
+        <device_type/>
+        <es_module>true</es_module>
+        <is_attachment>false</is_attachment>
+        <mime_type>application/javascript</mime_type>
+        <name>x_snc_voltworksr_0/RequestList</name>
+        <sys_class_name>sys_ux_lib_asset</sys_class_name>
+        <sys_created_by>robert.peerenboom</sys_created_by>
+        <sys_created_on>2026-04-09 15:44:57</sys_created_on>
+        <sys_id>beff9a9848974049ab21bd959490b5fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_voltworksr_0/RequestList</sys_name>
+        <sys_package display_value="VoltWorksRWP Visitor Management" source="x_snc_voltworksr_0">afcb9bc347480310086a1f94236d4392</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VoltWorksRWP Visitor Management">afcb9bc347480310086a1f94236d4392</sys_scope>
+        <sys_update_name>sys_ux_lib_asset_beff9a9848974049ab21bd959490b5fd</sys_update_name>
+        <sys_updated_by>robert.peerenboom</sys_updated_by>
+        <sys_updated_on>2026-04-09 15:44:57</sys_updated_on>
+    </sys_ux_lib_asset>
+</record_update>

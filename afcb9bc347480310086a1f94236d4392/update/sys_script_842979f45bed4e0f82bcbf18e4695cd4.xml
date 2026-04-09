@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_snc_voltworksr_0_visit_request</collection>
+        <condition/>
+        <description>Prevents saving a visit request when Scheduled End is before or equal to Scheduled Start.</description>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Validate Schedule Dates</name>
+        <order>25</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[
+(function executeRule(current, previous) {
+  var startStr = current.getValue('scheduled_start');
+  var endStr = current.getValue('scheduled_end');
+
+  if (!startStr || !endStr) {
+    return;
+  }
+
+  var start = new GlideDateTime(startStr);
+  var end = new GlideDateTime(endStr);
+
+  if (end.compareTo(start) <= 0) {
+    gs.addErrorMessage(
+      'Scheduled End must be after Scheduled Start. ' +
+      'Please correct the dates before saving.'
+    );
+    current.setAbortAction(true);
+  }
+})(current, previous);
+]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>robert.peerenboom</sys_created_by>
+        <sys_created_on>2026-04-09 16:08:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>842979f45bed4e0f82bcbf18e4695cd4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Validate Schedule Dates</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="VoltWorksRWP Visitor Management" source="x_snc_voltworksr_0">afcb9bc347480310086a1f94236d4392</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VoltWorksRWP Visitor Management">afcb9bc347480310086a1f94236d4392</sys_scope>
+        <sys_update_name>sys_script_842979f45bed4e0f82bcbf18e4695cd4</sys_update_name>
+        <sys_updated_by>robert.peerenboom</sys_updated_by>
+        <sys_updated_on>2026-04-09 16:08:13</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=842979f45bed4e0f82bcbf18e4695cd4"/>
+</record_update>

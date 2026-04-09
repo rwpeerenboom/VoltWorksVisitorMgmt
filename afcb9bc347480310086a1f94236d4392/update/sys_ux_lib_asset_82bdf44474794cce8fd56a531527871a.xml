@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_lib_asset">
+    <sys_ux_lib_asset action="INSERT_OR_UPDATE">
+        <bundled_asset>false</bundled_asset>
+        <category>component</category>
+        <checksum>40cf1be93929a6e75330a6eb6e798efb</checksum>
+        <config_option/>
+        <content>/*__ESM_BODY_START__*/window.process={};import{r as reactExports}from"./main.jsdbx";let ServiceNowEvents={ALERT:{ACTION_CLICKED:"NOW_ALERT#ACTION_CLICKED",AUTO_DISMISS:"NOW_ALERT#AUTO_DISMISS",EXPANDED_SET:"NOW_ALERT#EXPANDED_SET",TEXT_LINK_CLICKED:"NOW_ALERT#TEXT_LINK_CLICKED"},FORM_ACTION_BAR:{CLICKED:"NOW_RECORD_UI_ACTION_BAR#CLICKED"},FORM_COLUMN_LAYOUT:{ADD_NOTIFICATIONS:"NOW_RECORD_FORM_SECTION_COLUMN_LAYOUT#ADD_NOTIFICATIONS",CLEAR_NOTIFICATIONS:"NOW_RECORD_FORM_SECTION_COLUMN_LAYOUT#CLEAR_NOTIFICATIONS",REFERENCE_INFO_CLICK:"REFERENCE_INFO_CLICK"},FORM_CONTEXT:{ADD_NOTIFICATIONS:"NOW_REACT_FORM#ADD_NOTIFICATIONS",CLEAR_NOTIFICATIONS:"NOW_REACT_FORM#CLEAR_NOTIFICATIONS",FORM_FETCH_STARTED:"NOW_REACT_FORM#FORM_FETCH_STARTED",FORM_FETCH_SUCCESS:"NOW_REACT_FORM#FORM_FETCH_SUCCESS",FORM_SUBMIT_COMPLETED:"NOW_REACT_FORM#FORM_SUBMIT_COMPLETED",OPEN_RECORD:"NOW_REACT_FORM#OPEN_RECORD",SCREEN_STATUS_CHANGED:"NOW_REACT_FORM#SCREEN_STATUS_CHANGED",WRAPPED_ACTION:"NOW_REACT_FORM#WRAPPED_ACTION"},FORM_CSDB:{ADD_NOTIFICATIONS:"SN_FORM_DATA_CONNECTED#ADD_NOTIFICATIONS",CLEAR_NOTIFICATIONS:"SN_FORM_DATA_CONNECTED#CLEAR_NOTIFICATIONS",CSDB_OUTPUT_PROP_CHANGED:"CSDB_REACT#OUTPUT_PROP_CHANGED",CSDB_STATE_CHANGED:"CSDB_REACT#STATE_CHANGED",FETCH_STARTED:"SN_FORM_DATA_CONNECTED#FETCH_STARTED",FETCH_SUCCESS:"SN_FORM_DATA_CONNECTED#FETCH_SUCCESS",FORM_SUBMIT_COMPLETED:"SN_FORM_DATA_CONNECTED#FORM_SUBMIT_COMPLETED",ITEM_SELECTED:"SN_FORM_DATA_CONNECTED#ITEM_SELECTED",PREVIEW_RECORD:"SN_FORM_DATA_CONNECTED#PREVIEW_RECORD",PREVIEW_RECORD_INTERNAL:"PREVIEW_RECORD",SCREEN_STATUS_CHANGED:"SN_FORM_DATA_CONNECTED#SCREEN_STATUS_CHANGED",WRAPPED_ACTION:"SN_FORM_DATA_CONNECTED#WRAPPED_ACTION"},LISTS:{CREATE_NEW_RECORD:"NOW_RECORD_LIST_CONNECTED#CREATE_NEW_RECORD",DATA_FETCH_REQUESTED:"NOW_RECORD_LIST_CONNECTED#DATA_FETCH_REQUESTED",DATA_FETCH_SUCCEEDED:"NOW_RECORD_LIST_CONNECTED#DATA_FETCH_SUCCEEDED",ITEM_SELECTED:"ITEM_SELECTED",QUERY_UPDATED:"NOW_RECORD_LIST_CONNECTED#QUERY_UPDATED",REFRESH_REQUESTED:"NOW_RECORD_LIST_CONNECTED#REFRESH_REQUESTED",ROW_CLICKED:"NOW_RECORD_LIST_CONNECTED#ROW_CLICKED",SELECTED_RECORD_COUNT_UPDATED:"NOW_RECORD_LIST_CONNECTED#SELECTED_RECORD_COUNT_UPDATED"},LOADER:{ACTION_CLICKED:"NOW_LOADER#ACTION_CLICKED"}},useServiceNowEvent=(elementRef,eventName,handler)=&gt;{reactExports.useEffect(()=&gt;{var element;if(elementRef.current&amp;&amp;handler)return element=elementRef.current,element&amp;&amp;eventName&amp;&amp;handler?(element.addEventListener(eventName,handler),()=&gt;{element.removeEventListener(eventName,handler)}):(console.warn("[ServiceNow Events] Invalid parameters:",{element,eventName:eventName,handler:handler}),()=&gt;{})},[elementRef,eventName,handler])},setProperties=(ref,properties)=&gt;reactExports.useEffect(()=&gt;{ref.current&amp;&amp;Object.keys(properties).forEach(key=&gt;{ref.current[key]=properties[key]})},[ref,...Object.values(properties)]);export{ServiceNowEvents as S,setProperties as s,useServiceNowEvent as u};
+//# sourceMappingURL=setProperties.js.map.jsdbx
+</content>
+        <content_meta/>
+        <dependencies/>
+        <device_type/>
+        <es_module>true</es_module>
+        <is_attachment>false</is_attachment>
+        <mime_type>application/javascript</mime_type>
+        <name>x_snc_voltworksr_0/setProperties</name>
+        <sys_class_name>sys_ux_lib_asset</sys_class_name>
+        <sys_created_by>robert.peerenboom</sys_created_by>
+        <sys_created_on>2026-04-09 15:44:54</sys_created_on>
+        <sys_id>82bdf44474794cce8fd56a531527871a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_voltworksr_0/setProperties</sys_name>
+        <sys_package display_value="VoltWorksRWP Visitor Management" source="x_snc_voltworksr_0">afcb9bc347480310086a1f94236d4392</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VoltWorksRWP Visitor Management">afcb9bc347480310086a1f94236d4392</sys_scope>
+        <sys_update_name>sys_ux_lib_asset_82bdf44474794cce8fd56a531527871a</sys_update_name>
+        <sys_updated_by>robert.peerenboom</sys_updated_by>
+        <sys_updated_on>2026-04-09 15:44:54</sys_updated_on>
+    </sys_ux_lib_asset>
+</record_update>

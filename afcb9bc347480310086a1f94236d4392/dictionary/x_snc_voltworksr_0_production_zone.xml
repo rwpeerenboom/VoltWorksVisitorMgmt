@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element active="false" attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="4ff25a265ce647f19eb95b7cff77491a" label="Production Zone" name="x_snc_voltworksr_0_production_zone" type="collection">
+        <element display="true" label="Zone Name" mandatory="true" max_length="100" name="name" type="string"/>
+        <element label="Short Code" mandatory="true" max_length="10" name="short_code" type="string"/>
+        <element choice="1" label="Zone Type" mandatory="true" max_length="40" name="zone_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Paint Shop" sequence="1" value="paint_shop"/>
+                <element inactive_on_update="false" label="Warehouse" sequence="5" value="warehouse"/>
+                <element inactive_on_update="false" label="General Access" sequence="0" value="general_access"/>
+                <element inactive_on_update="false" label="Quality Lab" sequence="4" value="quality_lab"/>
+                <element inactive_on_update="false" label="Final Assembly" sequence="3" value="final_assembly"/>
+                <element inactive_on_update="false" label="Battery Assembly" sequence="2" value="battery_assembly"/>
+            </choice>
+        </element>
+        <element choice="1" label="Access Tier" mandatory="true" max_length="40" name="access_tier" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Standard" sequence="0" value="standard"/>
+                <element hint="No visitor access" inactive_on_update="false" label="Prohibited" sequence="2" value="prohibited"/>
+                <element hint="Requires Plant Supervisor approval" inactive_on_update="false" label="Restricted" sequence="1" value="restricted"/>
+            </choice>
+        </element>
+        <element label="Max Visitor Capacity" mandatory="true" max_length="40" name="max_visitor_capacity" type="integer"/>
+    </element>
+</database>

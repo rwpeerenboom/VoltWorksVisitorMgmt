@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_lib_asset">
+    <sys_ux_lib_asset action="INSERT_OR_UPDATE">
+        <bundled_asset>false</bundled_asset>
+        <category>component</category>
+        <checksum>ac567d8e4a76e81eff01412b1654ca1f</checksum>
+        <config_option/>
+        <content>/*__ESM_BODY_START__*/window.process={};import{j as jsxRuntimeExports}from"./main.jsdbx";function PortalHeader({currentView,navigateToView}){return jsxRuntimeExports.jsxs("header",{className:"portal-header",children:[jsxRuntimeExports.jsxs("div",{className:"portal-header__brand",children:[jsxRuntimeExports.jsx("div",{className:"portal-header__logo",children:jsxRuntimeExports.jsx("svg",{viewBox:"0 0 24 24",className:"portal-header__icon","aria-hidden":"true",children:jsxRuntimeExports.jsx("path",{d:"M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5",fill:"none",stroke:"currentColor",strokeWidth:"2",strokeLinecap:"round",strokeLinejoin:"round"})})}),jsxRuntimeExports.jsxs("div",{className:"portal-header__titles",children:[jsxRuntimeExports.jsx("h1",{className:"portal-header__title",children:"VoltWorks Plant Access"}),jsxRuntimeExports.jsx("span",{className:"portal-header__subtitle",children:"Visitor Request Portal"})]})]}),jsxRuntimeExports.jsxs("nav",{className:"portal-header__nav",children:[jsxRuntimeExports.jsx("a",{href:"?view=home",className:`nav-btn ${"home"===currentView?"nav-btn--active":""}`,onClick:e=&gt;{e.preventDefault(),navigateToView("home",null,{title:"VoltWorks Plant Access Portal"})},children:"Home"}),jsxRuntimeExports.jsx("a",{href:"?view=create",className:`nav-btn nav-btn--primary ${"create"===currentView?"nav-btn--active":""}`,onClick:e=&gt;{e.preventDefault(),navigateToView("create",null,{title:"New Access Request"})},children:"New Request"}),jsxRuntimeExports.jsx("a",{href:"?view=requests",className:`nav-btn ${"requests"===currentView?"nav-btn--active":""}`,onClick:e=&gt;{e.preventDefault(),navigateToView("requests",null,{title:"My Access Requests"})},children:"My Requests"})]})]})}export{PortalHeader as default};
+//# sourceMappingURL=PortalHeader.js.map.jsdbx
+</content>
+        <content_meta/>
+        <dependencies/>
+        <device_type/>
+        <es_module>true</es_module>
+        <is_attachment>false</is_attachment>
+        <mime_type>application/javascript</mime_type>
+        <name>x_snc_voltworksr_0/PortalHeader</name>
+        <sys_class_name>sys_ux_lib_asset</sys_class_name>
+        <sys_created_by>robert.peerenboom</sys_created_by>
+        <sys_created_on>2026-04-09 15:44:54</sys_created_on>
+        <sys_id>552d848110f24905883ec48c865c5ca0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_voltworksr_0/PortalHeader</sys_name>
+        <sys_package display_value="VoltWorksRWP Visitor Management" source="x_snc_voltworksr_0">afcb9bc347480310086a1f94236d4392</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VoltWorksRWP Visitor Management">afcb9bc347480310086a1f94236d4392</sys_scope>
+        <sys_update_name>sys_ux_lib_asset_552d848110f24905883ec48c865c5ca0</sys_update_name>
+        <sys_updated_by>robert.peerenboom</sys_updated_by>
+        <sys_updated_on>2026-04-09 15:44:54</sys_updated_on>
+    </sys_ux_lib_asset>
+</record_update>

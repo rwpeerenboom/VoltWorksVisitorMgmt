@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <callable_outputs/>
+        <copied_from/>
+        <description/>
+        <display_name>Log</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>5</order>
+        <step_config display_value="Log">58ab71985f30220012b44adb7f46661e</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>robert.peerenboom</sys_created_by>
+        <sys_created_on>2026-04-09 14:02:33</sys_created_on>
+        <sys_id>9744a3e8fc0045d5a8f55d1f75a9a81d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Log</sys_name>
+        <sys_package display_value="VoltWorksRWP Visitor Management" source="x_snc_voltworksr_0">afcb9bc347480310086a1f94236d4392</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VoltWorksRWP Visitor Management">afcb9bc347480310086a1f94236d4392</sys_scope>
+        <sys_update_name>sys_atf_step_9744a3e8fc0045d5a8f55d1f75a9a81d</sys_update_name>
+        <sys_updated_by>robert.peerenboom</sys_updated_by>
+        <sys_updated_on>2026-04-09 14:02:33</sys_updated_on>
+        <table/>
+        <test display_value="EHS Routing - Regulatory inspection bypasses EHS gate">990145eaf89547d89a1bc6568cad3e5e</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=9744a3e8fc0045d5a8f55d1f75a9a81d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>9744a3e8fc0045d5a8f55d1f75a9a81d</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robert.peerenboom</sys_created_by>
+        <sys_created_on>2026-04-09 14:12:25</sys_created_on>
+        <sys_id>a1ec5cbb67634855b65da20e84c401d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robert.peerenboom</sys_updated_by>
+        <sys_updated_on>2026-04-09 14:12:25</sys_updated_on>
+        <value>PASS: Regulatory inspection was auto-approved despite restricted zones — EHS gate bypassed</value>
+        <variable display_value="Log">523c79985f30220012b44adb7f46663a</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_atf_input_variable_58ab71985f30220012b44adb7f46661e^id=9744a3e8fc0045d5a8f55d1f75a9a81d"/>
+</record_update>

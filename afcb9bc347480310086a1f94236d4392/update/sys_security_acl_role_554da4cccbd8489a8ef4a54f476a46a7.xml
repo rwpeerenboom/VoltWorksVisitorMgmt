@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>robert.peerenboom</sys_created_by>
+        <sys_created_on>2026-04-09 12:59:58</sys_created_on>
+        <sys_id>554da4cccbd8489a8ef4a54f476a46a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_voltworksr_0_visitor.</sys_name>
+        <sys_package display_value="VoltWorksRWP Visitor Management" source="x_snc_voltworksr_0">afcb9bc347480310086a1f94236d4392</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VoltWorksRWP Visitor Management">afcb9bc347480310086a1f94236d4392</sys_scope>
+        <sys_security_acl display_value="x_snc_voltworksr_0_visitor">43f8c2e18a9f4f21aed75554e0d9eadd</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_554da4cccbd8489a8ef4a54f476a46a7</sys_update_name>
+        <sys_updated_by>robert.peerenboom</sys_updated_by>
+        <sys_updated_on>2026-04-09 12:59:58</sys_updated_on>
+        <sys_user_role display_value="x_snc_voltworksr_0.plant_supervisor" name="x_snc_voltworksr_0.plant_supervisor">3b6bc74a4f47490aac4dd0d10f307ff8</sys_user_role>
+    </sys_security_acl_role>
+</record_update>

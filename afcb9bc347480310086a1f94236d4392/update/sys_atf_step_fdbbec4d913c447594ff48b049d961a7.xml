@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <callable_outputs/>
+        <copied_from/>
+        <description/>
+        <display_name>Record Delete</display_name>
+        <inputs/>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>6</order>
+        <step_config display_value="Record Delete">8df72288df60220062fe6c7a4df2636d</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>robert.peerenboom</sys_created_by>
+        <sys_created_on>2026-04-09 14:02:33</sys_created_on>
+        <sys_id>fdbbec4d913c447594ff48b049d961a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record Delete</sys_name>
+        <sys_package display_value="VoltWorksRWP Visitor Management" source="x_snc_voltworksr_0">afcb9bc347480310086a1f94236d4392</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VoltWorksRWP Visitor Management">afcb9bc347480310086a1f94236d4392</sys_scope>
+        <sys_update_name>sys_atf_step_fdbbec4d913c447594ff48b049d961a7</sys_update_name>
+        <sys_updated_by>robert.peerenboom</sys_updated_by>
+        <sys_updated_on>2026-04-09 14:02:33</sys_updated_on>
+        <table>x_snc_voltworksr_0_visit_request</table>
+        <test display_value="EHS Routing - Restricted zone triggers EHS hold">8aab9974607e4a2b92d7905a1978346e</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=fdbbec4d913c447594ff48b049d961a7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>fdbbec4d913c447594ff48b049d961a7</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robert.peerenboom</sys_created_by>
+        <sys_created_on>2026-04-09 14:12:25</sys_created_on>
+        <sys_id>65985171a2d54bf187c98d39332e2a15</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robert.peerenboom</sys_updated_by>
+        <sys_updated_on>2026-04-09 14:12:25</sys_updated_on>
+        <value>x_snc_voltworksr_0_visit_request</value>
+        <variable display_value="Table">3d6d8b935320220002c6435723dc349c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>fdbbec4d913c447594ff48b049d961a7</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robert.peerenboom</sys_created_by>
+        <sys_created_on>2026-04-09 14:12:25</sys_created_on>
+        <sys_id>71b663368cc74b1595c05f8a14206194</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robert.peerenboom</sys_updated_by>
+        <sys_updated_on>2026-04-09 14:12:25</sys_updated_on>
+        <value>record_successfully_deleted</value>
+        <variable display_value="Assert type">c7e483f3671003007ba405225685effb</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>fdbbec4d913c447594ff48b049d961a7</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robert.peerenboom</sys_created_by>
+        <sys_created_on>2026-04-09 14:12:25</sys_created_on>
+        <sys_id>a8e1c0de5b794f3d8903b491d56a29d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robert.peerenboom</sys_updated_by>
+        <sys_updated_on>2026-04-09 14:12:25</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Enforce security">d13d0b935320220002c6435723dc34c8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>fdbbec4d913c447594ff48b049d961a7</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robert.peerenboom</sys_created_by>
+        <sys_created_on>2026-04-09 14:12:25</sys_created_on>
+        <sys_id>b8882020f61b41639fe71ab278c38d94</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robert.peerenboom</sys_updated_by>
+        <sys_updated_on>2026-04-09 14:12:25</sys_updated_on>
+        <value>{{step['a94278468f724824835e4020e4322f64'].record_id}}</value>
+        <variable display_value="Record">8f7d0f935320220002c6435723dc3471</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=fdbbec4d913c447594ff48b049d961a7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record_id</field>
+        <id>fdbbec4d913c447594ff48b049d961a7</id>
+        <sys_created_by>robert.peerenboom</sys_created_by>
+        <sys_created_on>2026-04-09 14:12:25</sys_created_on>
+        <sys_id>c7df8f2191f94cdeb6ccf591c233e1e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robert.peerenboom</sys_updated_by>
+        <sys_updated_on>2026-04-09 14:12:25</sys_updated_on>
+        <table>var__m_atf_input_variable_8df72288df60220062fe6c7a4df2636d</table>
+        <value>{{step['a94278468f724824835e4020e4322f64'].record_id}}</value>
+    </sys_element_mapping>
+</record_update>

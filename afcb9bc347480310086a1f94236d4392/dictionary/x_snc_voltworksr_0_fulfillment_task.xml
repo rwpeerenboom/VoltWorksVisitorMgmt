@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element active="false" attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="c1c8717c960e40afab21ce707afcd9c9" label="Fulfillment Task" name="x_snc_voltworksr_0_fulfillment_task" type="collection">
+        <element label="Assigned To" max_length="32" name="assigned_to" reference="sys_user" type="reference"/>
+        <element label="Visit Request" mandatory="true" max_length="32" name="visit_request" reference="x_snc_voltworksr_0_visit_request" type="reference"/>
+        <element choice="3" default="pending" label="State" mandatory="true" max_length="40" name="state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Cancelled" sequence="3" value="cancelled"/>
+                <element inactive_on_update="false" label="Pending" sequence="0" value="pending"/>
+                <element inactive_on_update="false" label="Completed" sequence="2" value="completed"/>
+                <element inactive_on_update="false" label="In Progress" sequence="1" value="in_progress"/>
+            </choice>
+        </element>
+        <element choice="1" label="Team Type" mandatory="true" max_length="40" name="team_type" type="choice">
+            <choice>
+                <element hint="Safety briefing" inactive_on_update="false" label="EHS" sequence="1" value="ehs"/>
+                <element hint="Tour guide assignment" inactive_on_update="false" label="Operations" sequence="2" value="operations"/>
+                <element hint="Badge preparation" inactive_on_update="false" label="Security" sequence="0" value="security"/>
+            </choice>
+        </element>
+        <element display="true" label="Task Description" mandatory="true" max_length="500" name="task_description" type="string"/>
+        <index name="index">
+            <element name="assigned_to"/>
+        </index>
+        <index name="index2">
+            <element name="visit_request"/>
+        </index>
+    </element>
+</database>

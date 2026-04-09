@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_lib_asset">
+    <sys_ux_lib_asset action="INSERT_OR_UPDATE">
+        <bundled_asset>false</bundled_asset>
+        <category>component</category>
+        <checksum>43cf4d57e19629d1237c55d88cb5fe77</checksum>
+        <config_option/>
+        <content>/*__ESM_BODY_START__*/window.process={};let BASE="/api/now/table/x_snc_voltworksr_0_visit_request",HEADERS={Accept:"application/json","Content-Type":"application/json","X-UserToken":window.g_ck};async function fetchRequests(){let params=new URLSearchParams({sysparm_display_value:"all",sysparm_limit:"50",sysparm_order_by:"sys_created_on",sysparm_order_dir:"desc"}),res=await fetch(`${BASE}?${params}`,{headers:HEADERS});if(!res.ok)throw Error(`Failed to fetch: ${res.status}`);return(await res.json()).result||[]}async function fetchRequest(sysId){let res=await fetch(`${BASE}/${sysId}?sysparm_display_value=all`,{headers:HEADERS});if(!res.ok)throw Error(`Failed to fetch record: ${res.status}`);return(await res.json()).result}async function createRequest(fields){let res=await fetch(`${BASE}?sysparm_display_value=all&amp;sysparm_input_display_value=true`,{method:"POST",headers:HEADERS,body:JSON.stringify(fields)});if(!res.ok){let err=await res.json().catch(()=&gt;({}));throw Error(err.error?.message||`Create failed: ${res.status}`)}return(await res.json()).result}async function searchUsers(query){let params=new URLSearchParams({sysparm_display_value:"all",sysparm_limit:"8",sysparm_query:`nameLIKE${query}^active=true`,sysparm_fields:"sys_id,name,email"}),res=await fetch(`/api/now/table/sys_user?${params}`,{headers:HEADERS});return res.ok&amp;&amp;(await res.json()).result||[]}export{fetchRequest as a,createRequest as c,fetchRequests as f,searchUsers as s};
+//# sourceMappingURL=api.js.map.jsdbx
+</content>
+        <content_meta/>
+        <dependencies/>
+        <device_type/>
+        <es_module>true</es_module>
+        <is_attachment>false</is_attachment>
+        <mime_type>application/javascript</mime_type>
+        <name>x_snc_voltworksr_0/api</name>
+        <sys_class_name>sys_ux_lib_asset</sys_class_name>
+        <sys_created_by>robert.peerenboom</sys_created_by>
+        <sys_created_on>2026-04-09 15:54:23</sys_created_on>
+        <sys_id>8c0cc5e7857e4169901ab92f3dd12a50</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_voltworksr_0/api</sys_name>
+        <sys_package display_value="VoltWorksRWP Visitor Management" source="x_snc_voltworksr_0">afcb9bc347480310086a1f94236d4392</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VoltWorksRWP Visitor Management">afcb9bc347480310086a1f94236d4392</sys_scope>
+        <sys_update_name>sys_ux_lib_asset_8c0cc5e7857e4169901ab92f3dd12a50</sys_update_name>
+        <sys_updated_by>robert.peerenboom</sys_updated_by>
+        <sys_updated_on>2026-04-09 15:54:23</sys_updated_on>
+    </sys_ux_lib_asset>
+</record_update>

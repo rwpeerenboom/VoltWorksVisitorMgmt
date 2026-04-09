@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="INSERT_OR_UPDATE">
+        <choices/>
+        <description/>
+        <name>view</name>
+        <page display_value="VoltWorks Plant Operations">755efb8fd8fe4ac4acfa3f71bfc0254c</page>
+        <required_translations/>
+        <route/>
+        <suffix>view</suffix>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>robert.peerenboom</sys_created_by>
+        <sys_created_on>2026-04-09 13:29:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d1ae7f5223ba451cb162affa84846001</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>view</sys_name>
+        <sys_package display_value="VoltWorksRWP Visitor Management" source="x_snc_voltworksr_0">afcb9bc347480310086a1f94236d4392</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VoltWorksRWP Visitor Management">afcb9bc347480310086a1f94236d4392</sys_scope>
+        <sys_update_name>sys_ux_page_property_d1ae7f5223ba451cb162affa84846001</sys_update_name>
+        <sys_updated_by>robert.peerenboom</sys_updated_by>
+        <sys_updated_on>2026-04-09 13:29:57</sys_updated_on>
+        <type>string</type>
+        <unique_name/>
+        <value>workspace-67495b170be54104b7d52c87a695df70</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="delete_multiple" query="documentkey=d1ae7f5223ba451cb162affa84846001"/>
+</record_update>

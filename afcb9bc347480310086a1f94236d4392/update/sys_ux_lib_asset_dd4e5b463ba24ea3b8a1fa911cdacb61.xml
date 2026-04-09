@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_lib_asset">
+    <sys_ux_lib_asset action="INSERT_OR_UPDATE">
+        <bundled_asset>false</bundled_asset>
+        <category>component</category>
+        <checksum>790df201290ec6cfc9d45ea5191fdac1</checksum>
+        <config_option/>
+        <content>/*__ESM_BODY_START__*/window.process={};import{j as jsxRuntimeExports}from"./main.jsdbx";function HomeView({navigateToView}){return jsxRuntimeExports.jsxs("div",{className:"home",children:[jsxRuntimeExports.jsxs("section",{className:"home__hero",children:[jsxRuntimeExports.jsx("h2",{className:"home__hero-title",children:"Welcome to VoltWorks Plant Access"}),jsxRuntimeExports.jsx("p",{className:"home__hero-subtitle",children:"Request and manage your visits to VoltWorks manufacturing facilities. Submit a new request or track an existing one."})]}),jsxRuntimeExports.jsxs("div",{className:"home__cards",children:[jsxRuntimeExports.jsxs("div",{className:"action-card",onClick:()=&gt;navigateToView("create",null,{title:"New Access Request"}),role:"button",tabIndex:0,children:[jsxRuntimeExports.jsx("div",{className:"action-card__icon-wrap action-card__icon-wrap--create",children:jsxRuntimeExports.jsx("svg",{viewBox:"0 0 24 24",className:"action-card__icon","aria-hidden":"true",children:jsxRuntimeExports.jsx("path",{d:"M12 5v14M5 12h14",fill:"none",stroke:"currentColor",strokeWidth:"2",strokeLinecap:"round"})})}),jsxRuntimeExports.jsx("h3",{className:"action-card__title",children:"New Access Request"}),jsxRuntimeExports.jsx("p",{className:"action-card__desc",children:"Submit a new plant visit request. Provide visit details, scheduling, and host information."}),jsxRuntimeExports.jsx("div",{className:"action-card__action",children:jsxRuntimeExports.jsx("a",{href:"?view=create",className:"nav-btn nav-btn--primary",onClick:e=&gt;{e.preventDefault(),e.stopPropagation(),navigateToView("create",null,{title:"New Access Request"})},children:"Start Request"})})]}),jsxRuntimeExports.jsxs("div",{className:"action-card",onClick:()=&gt;navigateToView("requests",null,{title:"My Access Requests"}),role:"button",tabIndex:0,children:[jsxRuntimeExports.jsx("div",{className:"action-card__icon-wrap action-card__icon-wrap--track",children:jsxRuntimeExports.jsx("svg",{viewBox:"0 0 24 24",className:"action-card__icon","aria-hidden":"true",children:jsxRuntimeExports.jsx("path",{d:"M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4",fill:"none",stroke:"currentColor",strokeWidth:"2",strokeLinecap:"round",strokeLinejoin:"round"})})}),jsxRuntimeExports.jsx("h3",{className:"action-card__title",children:"Track My Requests"}),jsxRuntimeExports.jsx("p",{className:"action-card__desc",children:"View the status of your submitted requests. Check approvals, fulfillment tasks, and visit details."}),jsxRuntimeExports.jsx("div",{className:"action-card__action",children:jsxRuntimeExports.jsx("a",{href:"?view=requests",className:"nav-btn",onClick:e=&gt;{e.preventDefault(),e.stopPropagation(),navigateToView("requests",null,{title:"My Access Requests"})},children:"View Requests"})})]})]}),jsxRuntimeExports.jsxs("section",{className:"home__info",children:[jsxRuntimeExports.jsx("h3",{className:"home__info-title",children:"What to Expect"}),jsxRuntimeExports.jsxs("div",{className:"home__steps",children:[jsxRuntimeExports.jsxs("div",{className:"step-item",children:[jsxRuntimeExports.jsx("span",{className:"step-item__number",children:"1"}),jsxRuntimeExports.jsxs("div",{className:"step-item__text",children:[jsxRuntimeExports.jsx("strong",{children:"Submit"})," — Complete the access request form with your visit details."]})]}),jsxRuntimeExports.jsxs("div",{className:"step-item",children:[jsxRuntimeExports.jsx("span",{className:"step-item__number",children:"2"}),jsxRuntimeExports.jsxs("div",{className:"step-item__text",children:[jsxRuntimeExports.jsx("strong",{children:"Review"})," — Your request is reviewed by the EHS and Operations teams."]})]}),jsxRuntimeExports.jsxs("div",{className:"step-item",children:[jsxRuntimeExports.jsx("span",{className:"step-item__number",children:"3"}),jsxRuntimeExports.jsxs("div",{className:"step-item__text",children:[jsxRuntimeExports.jsx("strong",{children:"Approved"})," — Once approved, fulfillment tasks are generated for your visit."]})]}),jsxRuntimeExports.jsxs("div",{className:"step-item",children:[jsxRuntimeExports.jsx("span",{className:"step-item__number",children:"4"}),jsxRuntimeExports.jsxs("div",{className:"step-item__text",children:[jsxRuntimeExports.jsx("strong",{children:"Visit"})," — Check in at the security desk on your scheduled date."]})]})]})]})]})}export{HomeView as default};
+//# sourceMappingURL=HomeView.js.map.jsdbx
+</content>
+        <content_meta/>
+        <dependencies/>
+        <device_type/>
+        <es_module>true</es_module>
+        <is_attachment>false</is_attachment>
+        <mime_type>application/javascript</mime_type>
+        <name>x_snc_voltworksr_0/HomeView</name>
+        <sys_class_name>sys_ux_lib_asset</sys_class_name>
+        <sys_created_by>robert.peerenboom</sys_created_by>
+        <sys_created_on>2026-04-09 15:44:57</sys_created_on>
+        <sys_id>dd4e5b463ba24ea3b8a1fa911cdacb61</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_voltworksr_0/HomeView</sys_name>
+        <sys_package display_value="VoltWorksRWP Visitor Management" source="x_snc_voltworksr_0">afcb9bc347480310086a1f94236d4392</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VoltWorksRWP Visitor Management">afcb9bc347480310086a1f94236d4392</sys_scope>
+        <sys_update_name>sys_ux_lib_asset_dd4e5b463ba24ea3b8a1fa911cdacb61</sys_update_name>
+        <sys_updated_by>robert.peerenboom</sys_updated_by>
+        <sys_updated_on>2026-04-09 15:44:57</sys_updated_on>
+    </sys_ux_lib_asset>
+</record_update>
